@@ -1,0 +1,136 @@
+.hotel-onboarding-container {
+    max-width:100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    font-family: sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  .star{
+     color: red;
+     font-size:11px ;
+  }
+  p {
+    text-align: center;
+    color: #666;
+    margin-top: 2px;
+  }
+  
+  .hotel-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    gap:20px;
+    display: flex;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 800px) {
+    .hotel-onboarding-container {
+      padding: 10px;
+    }
+  
+    .input-row {
+      flex-direction: column;
+      gap: 5px;
+    }
+  } 
+  .input-type {
+      display: flex;
+      gap: 10px;
+      margin-top: 1px;
+  
+    }
+    
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    
+    .input-group label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .input-group input {
+      width: 100%;
+      padding: 20px 0px 0px 0px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .signup{
+      /* width:100%; */
+      border:1px solid rgb(0, 0, 0);
+      padding: 20px;
+    }
+    .media-icons{
+        display:flex;
+        flex-direction: row;
+        border:1px solid red;
+    }
+    .mac{
+        display:flex;
+        border:2px solid black;
+        padding: 10px 20px ;
+        margin-top: 10px;
+        align-items: center;
+        margin-left: 40px;
+       justify-content: center;
+        border-radius: 50px;
+    }
+    .google{
+        display:flex;
+        border:2px solid black;
+        padding: 10px 20px;
+        margin-top: 10px;
+        align-items: center;
+        margin-left: 40px;
+       justify-content: center;
+        border-radius: 50px;
+    }
+    .facebook{
+        display:flex;
+        border:2px solid black;
+        padding: 10px 20px;
+        margin-top: 10px;
+        align-items: center;
+        margin-left: 40px;
+        border-radius: 50px;
+    }
+
+    
+    
+    
