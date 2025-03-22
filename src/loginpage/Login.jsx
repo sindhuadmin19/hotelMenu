@@ -1,6 +1,10 @@
 import React, {useState}from "react";
 import "./Login.css";
 import { RiStarSFill } from "react-icons/ri";
+import { FaApple } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import { TfiFacebook } from "react-icons/tfi";
+
 
 
 const login=() =>{
@@ -39,6 +43,7 @@ const login=() =>{
             <input
               type="text"
               name="hotelName"
+              placeholder="Enter hotel name"
               value={formData.hotelName}
               onChange={handleChange}
               required
@@ -48,6 +53,7 @@ const login=() =>{
             <input
               type="text"
               name="address"
+               placeholder="Address"
               value={formData.address}
               onChange={handleChange}
               required
@@ -89,6 +95,7 @@ const login=() =>{
             <input
               type="email"
               name="email"
+              placeholder="example@hotel.com"
               value={formData.email}
               onChange={handleChange}
               required
@@ -98,6 +105,7 @@ const login=() =>{
             <input
               type="tel"
               name="phone"
+              placeholder="Phone number"
               value={formData.phone}
               onChange={handleChange}
               required
@@ -122,18 +130,30 @@ const login=() =>{
             />
     
             <label><RiStarSFill className="star"/>Hotel Image</label>
-            <input type="Upload Hotel Image" name="Upload Hotel Image"onChange={handleChange} required />
+            {/* <input type="Upload Hotel Image" name="Upload Hotel Image"placeholder="hotel image"onChange={handleChange} required /> */}
+            <div className="upload-box">
+              <input type="Upload" name="Upload" placeholder="Upload" onChange={handleChange} required />
+            </div>
             
             <button type="submit">Sign Up</button>
           </form>
-          <div className="signup">
-            Or sign up with
+          <div className="signupp">
+          <div className="line"></div>
+          <div className="singup-or">Or sign up with</div>
+          <div className="linee"></div>
           </div>
           <div className="media-icons">
-            <div className="mac">1</div>
-            <div className="google">2</div>
-            <div className="facebook">3</div>
+            <div className="mac">
+              <div className="mac-icon"><FaApple /></div>
+            </div>
+            <div className="google">
+              <div className="google-icon"><FcGoogle /></div>
+            </div>
+            <div className="facebook">
+              <div className="facebook-icon"><TfiFacebook /></div>
+            </div>
           </div>
+          <div className="sign-in">Already have an account? <a href="SignIn">SignIn</a></div>
         </div>
    
   );
